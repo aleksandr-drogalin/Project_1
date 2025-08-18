@@ -14,6 +14,6 @@ public class EvenNumber {
             System.out.println("Число нечетное!");
         }
 
-        scanner.close();
+        scanner.close(); // О том что нужно закрывать подсказал chatgpt
     }
 }
