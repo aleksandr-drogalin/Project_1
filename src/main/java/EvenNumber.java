@@ -1,19 +1,12 @@
-import java.util.Scanner;
-
 public class EvenNumber {
-    public static void main(String[] args) {
 
-        System.out.println("Введите число");
-
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-
+    public static boolean checkEvenNumber(int number) {
         if (number % 2 == 0) {
-            System.out.println("Число четное!");
+            System.out.println("Число " + number + " четное!");
+            return true;
         } else {
-            System.out.println("Число нечетное!");
+            System.out.println("Число " + number + " не четное!");
+            return false;
         }
-
-        scanner.close(); // О том что нужно закрывать подсказал chatgpt
     }
 }
