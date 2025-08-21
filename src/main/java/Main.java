@@ -23,6 +23,7 @@ public class Main {
 
         System.out.println("\nЗадание №6");
         //Вызвать метод isLucky() всегда возвращающий true
-        System.out.println(Ticket.isLucky());
+        Ticket ticket = new Ticket(556891);
+        System.out.println(ticket.isLucky());
     }
 }

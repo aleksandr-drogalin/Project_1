@@ -1,7 +1,10 @@
-public class Ticket {
-    static final boolean VALUE = true;
+import lombok.AllArgsConstructor;
 
-    public static boolean isLucky() {
-        return VALUE;
+@AllArgsConstructor
+public class Ticket {
+    private int value;
+
+    public boolean isLucky() {
+        return true;
     }
 }
