@@ -5,13 +5,13 @@ public class NameLength {
         int length = name.length();
 
         if (length > 0 && length <= 20) {
-            System.out.println("Успешно! Количество символов в имени " + "\"" + name + "\"" + " равно " + length);
+            System.out.println("Количество символов в имени " + "\"" + name + "\"" + " равно " + length);
             return true;
         } else if (length == 0) {
-            System.out.println("Ошибка! Имя не должно быть пустым!");
+            System.out.println("Имя не должно быть пустым!");
             return false;
         } else {
-            System.out.println("Ошибка! Имя " + "\"" + name + "\"" + " содержит более 20 символов");
+            System.out.println("Имя " + "\"" + name + "\"" + " содержит более 20 символов");
             return false;
         }
     }
