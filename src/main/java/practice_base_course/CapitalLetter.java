@@ -1,3 +1,5 @@
+package practice_base_course;
+
 public class CapitalLetter {
     public static boolean checkStartCapitalLetter(String line) {
         if (line == null || line.isEmpty()) {

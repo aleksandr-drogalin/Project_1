@@ -1,3 +1,5 @@
+package practice_base_course;
+
 public class NameLength {
 
     public static boolean checkNameLength(String inputName) {
