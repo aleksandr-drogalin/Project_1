@@ -1,5 +1,12 @@
 package practice_jcf;
 
+
+/*
+Написать метод, который принимает строку ровно и 6 цифр (например, "385916") и
+возвращает true, если это счастливый билет. Счастиливый билет тот, чья сумма первых трех цифр
+равна сумме последних трех
+ */
+
 public class TicketChecker {
     public static boolean isLuckyTicket(String ticket) {
 
@@ -50,7 +57,7 @@ public class TicketChecker {
             }
 
             System.out.println("Сумма первых трех чисел: " + sum1);
-            System.out.println("Сумма вторых трех чисел: " + sum2);
+            System.out.println("Сумма последних трех чисел: " + sum2);
 
             result = sum1 == sum2;
         } else {
