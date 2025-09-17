@@ -9,7 +9,7 @@ package practice_jcf;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class EmployeeUniqueSkills {
     public static void main(String[] args) {
@@ -26,11 +26,12 @@ public class EmployeeUniqueSkills {
             skillsList.add(person.getSkills());
         }
 
-        //создаем поток в который развернем все навыки
-        Stream<String> skillsStream = skillsList.stream()
-                .flatMap(Collection::stream);
+        List<String> uniqueSkills = (List<String>) skillsList.stream()
+                .flatMap(Collection::stream)
+                .sorted()
+                .distinct()
+                .collect(Collectors.toList());
 
-        //исключим дубликаты навыков и отсортируем
-        skillsStream.sorted().distinct().forEach(System.out::println);
+        System.out.println(uniqueSkills);
     }
 }

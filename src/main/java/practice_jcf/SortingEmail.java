@@ -27,8 +27,7 @@ public class SortingEmail {
             }
         }
 
-        Stream<String> streamDomain = domainList.stream(); // создали поток из коллекции доменов
-        List<String> sortedDomainList = streamDomain //список сортированных доменов
+        List<String> sortedDomainList = domainList.stream() //список сортированных доменов
                 .sorted()
                 .distinct()
                 .collect(Collectors.toList());
@@ -44,9 +43,7 @@ public class SortingEmail {
                 "test@mail.ru"
         );
 
-
         List<String> sortedEmails = SortingEmail.sortingEmail(emails);
         System.out.println(sortedEmails);
     }
-
 }
