@@ -1,3 +1,5 @@
+package practice_base_course;
+
 public class Email {
 
     public static boolean checkEmail(String email) {

@@ -1,3 +1,5 @@
+package practice_base_course;
+
 public class EvenNumber {
 
     public static boolean checkEvenNumber(int number) {

@@ -1,3 +1,5 @@
+package practice_base_course;
+
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor

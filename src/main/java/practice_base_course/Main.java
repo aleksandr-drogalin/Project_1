@@ -1,6 +1,11 @@
+package practice_base_course;
+
 public class Main {
     public static void main(String[] args) {
 
+        /*
+        Задания по базовому курсу java
+         */
         System.out.println("Задание №1");
         //Проверяем четное ли число, результат выводим в консоль
         System.out.println(EvenNumber.checkEvenNumber(11));

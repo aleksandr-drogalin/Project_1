@@ -1,3 +1,5 @@
+package practice_base_course;
+
 import java.util.Random;
 
 public class ReverseArray {
